@@ -40,18 +40,10 @@ public class ScoreManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI RemainingObjsTxt;
 
-    // Start is called before the first frame update
     void Start()
     {
         BestScoreTxt.GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetInt("BestScore").ToString();
         RemainingObjects = 8;
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnApplicationQuit()

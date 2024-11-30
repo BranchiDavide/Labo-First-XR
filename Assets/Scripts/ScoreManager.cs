@@ -46,6 +46,7 @@ public class ScoreManager : MonoBehaviour
         RemainingObjects = 8;
     }
 
+    // Salvare il best score quando il gioco viene fermato
     void OnApplicationQuit()
     {
         int currentBestScore = PlayerPrefs.GetInt("BestScore");

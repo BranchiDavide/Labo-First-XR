@@ -5,6 +5,10 @@ using UnityEngine;
 public class RadioScript : MonoBehaviour
 {
     private AudioSource audio;
+
+    /**
+     * Metodo per far partire e mettere in pausa la radio quando viene cliccata
+     */
     public void StartRadio()
     {
         if (audio.isPlaying)

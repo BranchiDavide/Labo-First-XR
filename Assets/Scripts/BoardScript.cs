@@ -13,6 +13,9 @@ public class BoardScript : MonoBehaviour
 		set { _canvas = value; }
 	}
 
+	/**
+	 * Metodo per mostrare il canvas sulla lavagna bianca
+	 */
 	public void ShowCanvas()
 	{
 		Canvas.GetComponent<Canvas>().enabled = true;
